@@ -1,14 +1,14 @@
-#ifndef LIBNTR_INCLUDE
-#define LIBNTR_INCLUDE
+#ifndef LIBNTR_H
+#define LIBNTR_H
 
 //-----------------------------------------------------------------
 #ifdef ARM9
 //-----------------------------------------------------------------
-    #include "libntr/fmt/NCLR.h"
-    #include "libntr/fmt/vram.h"
-    #include "libntr/gfx/palette.h"
+#include "libntr/fmt/NCLR.h"
+#include "libntr/fmt/vram.h"
+#include "libntr/gfx/palette.h"
 //-----------------------------------------------------------------
-#endif  // # ifdef ARM9
+#endif // # ifdef ARM9
 //-----------------------------------------------------------------
 
 //-----------------------------------------------------------------
@@ -16,7 +16,7 @@
 //-----------------------------------------------------------------
 
 //-----------------------------------------------------------------
-#endif  // # ifdef ARM7
+#endif // # ifdef ARM7
 //-----------------------------------------------------------------
 
 #endif // # ifdef LIBNTR_INCLUDE

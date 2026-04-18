@@ -6,13 +6,12 @@
 #include <stdio.h>
 
 #include "libntr/fmt/Common.h"
-#include "libntr/fmt/NCLR.h"
 
-typedef struct BinaryFile{
-    Header *header;
-    CommonBlock *common;
-    void *block;
-}BinaryFile;
+typedef struct BinaryFile {
+  Header *header;
+  CommonBlock *common;
+  void *block;
+} BinaryFile;
 
 bool ReadFile(const char *nclr_path, bool on_vram);
 

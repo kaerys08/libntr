@@ -1,16 +1,14 @@
-#ifndef _NCLR_INCLUDE
-#define _NCLR_INCLUDE
+#ifndef NCLR_H
+#define NCLR_H
 
-#include <cstdint>
 #include <nds.h>
 
 #include <stdio.h>
 #include <string.h>
 
-#include "libntr/fmt/Common.h"
-#include "libntr/fmt/vram.h"
-#include "libntr/fs/binaryFile.h"
-#include "libntr/gfx/palette.h"
+#include "fmt/Common.h"
+#include "fs/binaryFile.h"
+#include "gfx/palette.h"
 
 typedef struct Palette {
   uint32_t magic;
@@ -24,7 +22,6 @@ typedef struct Palette {
 
 typedef union Data {
   u16 data;
-  Color color;
 } Data;
 
 typedef struct NCLR {
@@ -37,4 +34,4 @@ static inline void getNCLRsize(NCLR nclr) {
   iprintf("NCLR size: %i", sizeof(nclr));
 }
 
-#endif // #ifndef _NCLR_INCLUDE
+#endif // #ifndef NCLR_H
